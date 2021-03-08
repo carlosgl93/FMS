@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fms/CancelRedemption.dart';
 import 'package:fms/PendingRedemption.dart';
+import 'package:fms/RedemptionControl.dart';
+import 'package:fms/CreateProduct.dart';
+import 'package:fms/Settings.dart';
 
 import 'LoadStock.dart';
 
@@ -64,7 +68,10 @@ class NavBar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.timelapse),
             title: Text('Canjes en proceso'),
-            onTap: () => null, // navigation to consultar canje
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => RedemptionControl())
+              ), // navigation to consultar canje
           ),
           ListTile(
             leading: Icon(Icons.add_rounded),
@@ -77,17 +84,26 @@ class NavBar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.create_rounded),
             title: Text('Crear producto'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CreateProduct())
+              ),
           ),
           ListTile(
             leading: Icon(Icons.cancel),
             title: Text('Anular canje'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CancelRedemption())
+              ),
           ),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Ajustes'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Settings())
+              ),
           ),
         ],
       )
