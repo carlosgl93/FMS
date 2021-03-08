@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "599259798793",
+    "firebase_url": "https://fidelizationms-default-rtdb.firebaseio.com",
+    "project_id": "fidelizationms",
+    "storage_bucket": "fidelizationms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599259798793:android:9c49d0b10fc7dc349587d8",
+        "android_client_info": {
+          "package_name": "com.example.baby_names"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599259798793-nd8p5340aolqelkjuctt1jtvdvm2u2pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBe2unMssb7C7sZdNZFo4oszBhEtu3PJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599259798793-nd8p5340aolqelkjuctt1jtvdvm2u2pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599259798793:android:6bae59b8f6f99ebe9587d8",
+        "android_client_info": {
+          "package_name": "com.example.fms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599259798793-nd8p5340aolqelkjuctt1jtvdvm2u2pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBe2unMssb7C7sZdNZFo4oszBhEtu3PJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599259798793-nd8p5340aolqelkjuctt1jtvdvm2u2pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
