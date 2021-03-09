@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fms/authentication_service.dart';
+import 'package:fms/signin.dart';
 import 'package:provider/provider.dart';
 
-import 'SignUp.dart';
-
-class SignInPage extends StatelessWidget {
+class SignUpPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
@@ -14,7 +13,7 @@ class SignInPage extends StatelessWidget {
     // This size provide us total height and width of our screen
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bienvenido a FMS'),
+        title: Text('Registrate'),
       ),
       body: Center(
         child: Container(
@@ -22,7 +21,7 @@ class SignInPage extends StatelessWidget {
           width: double.infinity,
           padding: EdgeInsets.fromLTRB(40.0, 100, 40, 50),
           child: Column(children: [
-            Text('Ingrese su email y contraseña para proceder'),
+            Text('Ingrese su email y contraseña para registrarse'),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -36,22 +35,22 @@ class SignInPage extends StatelessWidget {
                 )),
             ElevatedButton(
               onPressed: () {
-                context.read<AuthenticationService>().signIn(
+                context.read<AuthenticationService>().signUp(
                     email: emailController.text.trim(),
                     password: passwordController.text.trim());
               },
-              child: Text("Sign in"),
+              child: Text("Registrarse"),
             ),
             Container(
                 child: Column(
               children: [
-                Text("¿No tienes cuenta?"),
+                Text("¿Ya tienes cuenta?"),
                 ElevatedButton(
                   onPressed: () => {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SignUpPage()))
+                        MaterialPageRoute(builder: (context) => SignInPage()))
                   },
-                  child: Text("Registrate Aquí"),
+                  child: Text("Accede con tu cuenta"),
                 ),
               ],
             ))
